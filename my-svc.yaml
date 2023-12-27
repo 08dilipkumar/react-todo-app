@@ -3,9 +3,10 @@ kind: Service
 metadata: 
   name: my-svc 
 spec: 
-  type: LoadBalancer
+  type: NodePort
   ports: 
     - port: 3000 
-      targetPort: 3000  
+      targetPort: 3000 
+      nodePort:30001 
   selector: 
     app: my-react-app

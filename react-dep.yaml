@@ -1,7 +1,7 @@
 # deployment.yaml
 
 apiVersion: apps/v1
-kind: Deployment
+kind: Deployment 
 metadata:
   name: my-react-app-deployment
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-react-app
-        image: 07dilip/my-react-app:01  # Use your Docker image name and tag
+        image: 07dilip/my-react-app:02  # Use your Docker image name and tag
         ports:
         - containerPort: 3000
 
